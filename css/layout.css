@@ -44,11 +44,12 @@ body {
   gap: 10px;
   flex-basis: 50%;
   border-radius: 50%;
+  align-items: right;
 }
 
 .portfolio-header-image {
   display: block;
-  width: 100%;
+  width: 65%;
   height: auto;
   border-radius: 50%;
 }
