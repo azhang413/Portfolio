@@ -47,8 +47,10 @@ body {
 }
 
 .portfolio-header-image {
+  display: block;
   width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
 #portfolio-header-text-container {
