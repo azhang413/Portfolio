@@ -3,15 +3,12 @@
   font-weight: bold;
   text-align: center;
 }
-.words-wrapper .css {
-  color: #2ec4b6;
-}
+
 .words-wrapper .words {
   display: inline-grid;
   padding: 0 10px;
   border-radius: 6px;
   color: var(--color, #000);
-  background: var(--color-bg, #ffc703);
 }
 .words-wrapper .words span {
   grid-area: 1/1;
