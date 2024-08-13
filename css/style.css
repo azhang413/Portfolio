@@ -77,17 +77,15 @@ a:hover {
 
 .rotatingText-adjective {
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   left: 0;
   margin-bottom: 0;
   margin-top: 50px;
   opacity: 0;
-  position: absolute;
   right: 0;
   text-align: center;
-  text-transform: uppercase;
   top: 0;
 }
 
@@ -95,12 +93,14 @@ a:hover {
   animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .rotatingText-adjective:nth-of-type(2) {
   animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 1.75s;
+  animation-iteration-count: infinite;
 }
 
 .rotatingText-adjective:nth-of-type(3) {
@@ -108,6 +108,7 @@ a:hover {
   animation-duration: 1.5s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 
 @keyframes rotate {
