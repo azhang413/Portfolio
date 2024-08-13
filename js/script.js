@@ -20,5 +20,4 @@ setInterval(() => {
   currentWord.classList.remove(CURRENT_CLASS);
   nextWord.classList.add(CURRENT_CLASS);
   wrapper.style.setProperty("--color", nextWord.dataset.color);
-  wrapper.style.setProperty("--color-bg", nextWord.dataset.bgColor);
 }, 1500);
