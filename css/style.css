@@ -1,6 +1,7 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap");
+
 
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 html {
@@ -64,6 +65,30 @@ a:hover {
 
 .logo:hover {
   cursor: default;
+}
+
+/*  ROTATING TEXT */
+.rotatingText { 
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+
+.rotatingText-content { 
+  position: relative;
+  width: 100%;
+}
+
+.rotatingText-description { 
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+  
+  @media (min-width: 768px) { 
+    font-size: 18px;
+  }
 }
 
 /* HAMBURGER MENU */
