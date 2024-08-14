@@ -6,13 +6,16 @@
   display: flex;
   flex-direction: column;
   flex-grow: 6;
+  justify-content: left;
 }
 
 .main .title .name {
+  color: black;
   font-size: 40px;
 }
 
 .main .title .words-wrapper {
+  color: black;
   font-size: 20px;
 }
 
