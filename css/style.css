@@ -5,11 +5,11 @@ main {
 title {
   display: flex;
   flex-direction: row;
-  flex-grow: 1.5;
+  flex-grow: 6;
 }
 
-name {
-  font-size: 40px;
+.name {
+  font-size: 60px;
 }
 
 .words-wrapper {
