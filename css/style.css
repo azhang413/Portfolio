@@ -1,15 +1,15 @@
-.main {
+body .main {
   display: flex;
 }
 
-.main .title {
+body .main .title {
   display: flex;
   flex-direction: column;
   flex-grow: 6;
   justify-content: left;
 }
 
-.main .title .name {
+body .main .title .name {
   color: black;
   font-size: 40px;
 }
