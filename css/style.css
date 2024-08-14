@@ -1,14 +1,14 @@
-main {
+.main {
   display: flex;
 }
 
-title {
+.main .title {
   display: flex;
   flex-direction: row;
   flex-grow: 6;
 }
 
-.name {
+.main .title .name {
   color: aqua;
   font-size: 60px;
 }
