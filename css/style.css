@@ -6,7 +6,7 @@ body .main .title {
   display: flex;
   flex-direction: column;
   flex-grow: 6;
-  justify-content: left;
+  justify-content: center;
 }
 
 body .main .title .name {
@@ -14,22 +14,22 @@ body .main .title .name {
   font-size: 40px;
 }
 
-.main .title .words-wrapper {
+body .main .title .words-wrapper {
   color: black;
   font-size: 20px;
 }
 
-.main .title .words-wrapper .words {
+body .main .title .words-wrapper .words {
   display: inline-grid;
   padding: 0 10px;
   border-radius: 6px;
   color: var(--color, #000);
 }
-.main .title .words-wrapper .words span {
+body .main .title .words-wrapper .words span {
   grid-area: 1/1;
   display: none;
 }
-.main .title .words-wrapper .words span.current {
+body .main .title .words-wrapper .words span.current {
   display: block;
   animation-name: rotate-text-up;
   animation-duration: 1.5s;
