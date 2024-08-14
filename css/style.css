@@ -4,30 +4,29 @@
 
 .main .title {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-grow: 6;
 }
 
 .main .title .name {
-  color: aqua;
-  font-size: 60px;
+  font-size: 40px;
 }
 
-.words-wrapper {
+.main .title .words-wrapper {
   font-size: 20px;
 }
 
-.words-wrapper .words {
+.main .title .words-wrapper .words {
   display: inline-grid;
   padding: 0 10px;
   border-radius: 6px;
   color: var(--color, #000);
 }
-.words-wrapper .words span {
+.main .title .words-wrapper .words span {
   grid-area: 1/1;
   display: none;
 }
-.words-wrapper .words span.current {
+.main .title .words-wrapper .words span.current {
   display: block;
   animation-name: rotate-text-up;
   animation-duration: 1.5s;
