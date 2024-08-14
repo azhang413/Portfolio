@@ -1,5 +1,19 @@
-.words-wrapper {
+.main {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1.5;
+}
+
+.name {
   font-size: 40px;
+}
+
+.words-wrapper {
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
