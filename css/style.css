@@ -1,14 +1,14 @@
-.main {
+main {
   display: flex;
 }
 
-.title {
+title {
   display: flex;
   flex-direction: row;
   flex-grow: 1.5;
 }
 
-.name {
+name {
   font-size: 40px;
 }
 
