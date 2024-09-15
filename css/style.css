@@ -57,7 +57,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-.navbar {
+body .main .navbar {
   display: grid;
   background-color: yellow;
   align-items: center;
