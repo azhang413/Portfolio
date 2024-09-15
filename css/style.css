@@ -64,7 +64,7 @@ body .main .navbar {
   grid-template-rows: 40% 40% auto;
 }
 
-.navbar .navbar-items a {
+body .main .navbar .navbar-items a {
   display: block;
   padding: 10px;
   justify-content: left;
