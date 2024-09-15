@@ -1,45 +1,84 @@
-body .main {
-  display: flex;
+html, body {
+  height: 100%;
 }
 
-body .main .title {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 8;
-  justify-content: center;
+body {
+  height: 100%;
+  min-height: 100vh;
 }
 
-body .main .title .name {
+.main {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 55% auto; /* Make a single column layout */
+  grid-template-rows: 70% 30%; /* Stack the title elements on top of each other */
+}
+
+.title {
+  display: grid;
+  grid-template-rows: 60% auto; /* Stack name and words-wrapper vertically */
+}
+
+.name {
+  display: grid;
   color: black;
+  background-color: red;
   font-size: 40px;
+  justify-content: right;
+  align-content: end;
 }
 
-body .main .title .words-wrapper {
+.words-wrapper {
+  display: grid;
+  background-color: blue;
   color: black;
   font-size: 20px;
+  justify-content: right;
+  align-self: start;
 }
 
-body .main .title .words-wrapper .words {
+.words {
   display: inline-grid;
   padding: 0 10px;
   border-radius: 6px;
   color: var(--color, #000);
 }
-body .main .title .words-wrapper .words span {
+
+.words span {
   grid-area: 1/1;
   display: none;
 }
-body .main .title .words-wrapper .words span.current {
+
+.words span.current {
   display: block;
   animation-name: rotate-text-up;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
+.navbar {
+  display: grid;
+  background-color: yellow;
+  align-items: center;
+  grid-template-rows: 40% 40% auto;
+}
+
+.navbar .navbar-items a {
+  display: block;
+  padding: 10px;
+  justify-content: left;
+  align-self: center;
+}
+
+.navbar .navbar-items a:hover {
+  color: green;
+}
+
 /* Animations */
 @keyframes rotate-text-up { 
   0% {
-    transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 20px, 0);
     opacity: 0;
   }
   
@@ -49,7 +88,7 @@ body .main .title .words-wrapper .words span.current {
   }
   
   100% {
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -10px, 0);
     opacity: 0;
   }
 }
@@ -57,7 +96,7 @@ body .main .title .words-wrapper .words span.current {
 @keyframes fade-text-in { 
   0% {
     opacity: 0;
-    transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 40px, 0);
   }
   
   50%, 100% {
